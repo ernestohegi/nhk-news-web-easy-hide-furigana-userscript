@@ -14,13 +14,13 @@
     var NHKHideFurigana = (function () {
         'use strict';
 
+        var container;
+
         var HIDE_FURIGANA_CLASS_NAME = 'hide-furigana',
             NEWS_ARTICLE_ID_SELECTOR = 'newsarticle',
             MOUSE_ENTER_EVENT_NAME   = 'mouseenter',
             MOUSE_LEAVE_EVENT_NAME   = 'mouseleave'
         ;
-
-        var container;
 
         var setElements = function () {
             container = document.getElementById(NEWS_ARTICLE_ID_SELECTOR);
